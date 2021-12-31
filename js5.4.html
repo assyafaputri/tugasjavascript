@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas image picker</title>
+</head>
+
+<body>
+    <select name="" id="food" onchange="berubah">
+        <option value="">Silakan Pilih</option>
+        <option value="macarons">Macarons</option>
+        <option value="sandwich">Sandwich</option>
+        <option value="donuts">Donuts</option>
+        <option value="croffle">Croffle</option>
+        <option value="pancake">Pancake</option>
+        <option value="cookies">Cookies</option>
+    </select>
+    <br>
+    <br>
+
+    <div style="display: flex; justify-content: center; id="tempat_gambar">
+        <img src="sandwich.jpg" alt="">
+        <img src="macarons.jpg" alt="">
+        <img src="donuts.jpg" alt="">
+        <img src="croffle.jpg" alt="">
+        <img src="cookies.jpg" alt="">
+        <img src="pancake.jpg" alt="">
+    </div>
+
+    <script>
+        let food = document.getElementById("food")
+        let tempat_gambar = document.getElementById("tempat_gambar")
+
+        function berubah() {
+            switch (food.value) {
+                case "macarons": tempat_gambar.innerHTML : <img src ="macarons.jpg" alt="">
+        }
+    </script>
+
+    
+</body>
+</html>
